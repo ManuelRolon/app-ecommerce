@@ -19,6 +19,9 @@ const Contador = (props) => {
     const pushCarrito = () => {
         if (count < props.stock) {
             agregarCarrito.push(count)
+        } else{
+            alert('no hay stock disponible')
+
         }
         console.log(agregarCarrito)
 
