@@ -9,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NavBar />
+        <NavBar  />
         <ItemListContainer color = 'blue' greeting = 'HOLA'/>
-        <Contador />
+        <Contador stock ='10' inicial ='1' />
       </header>
     </div>
   );
