@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-const Contador = (props) => {
+const ItemCount = (props, onAdd) => {
     const [ count, setCount] = useState(0)
     let agregarCarrito= [];
 
@@ -15,6 +15,7 @@ const Contador = (props) => {
 
         setCount( count + 1 )
     }
+    
     
     const pushCarrito = () => {
         if (count < props.stock) {
@@ -38,4 +39,4 @@ const Contador = (props) => {
     )
 }
 
-export  default Contador
+export  default ItemCount
